@@ -64,7 +64,7 @@ function App() {
         
         </form>
       </div>
-      <div className=' lg:w-[40rem] md:w-6/12 w-9/12'>
+      <div className=' lg:w-[40rem] md:w-6/12 w-9/12 scrollbar-hide'>
         <View todo={todo} onDelete={onDelete} edit={edit} setTask={setTask} saveEdit={saveEdit}  handleEdit={handleEdit} updatedValue={updatedValue}/>
       </div>
     </div>

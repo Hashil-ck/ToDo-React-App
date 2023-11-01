@@ -10,7 +10,7 @@ function View({ todo ,onDelete,handleEdit,setTask,saveEdit,updatedValue}) {
       </h1>
       <div className="h-[24rem] overflow-y-scroll scrollbar-hide my-2">
         {todo?.map((item,index) => (
-          <div className="mt-4 bg-blue-100 w-full h-10 items-center flex justify-between  rounded-md px-4">
+          <div className="mt-4 bg-blue-100 w-full scrollbar-hide h-10 items-center flex justify-between  rounded-md px-4">
            {item.isClicked===true? 
            <input type="text" onChange={(e)=>updatedValue(e,item)} className="px-3 outline-none bg-blue-100" defaultValue={item.list}/>:<li>{item.list}</li>
           } 
